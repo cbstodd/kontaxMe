@@ -1,33 +1,33 @@
 @import 'bootstrap';
 // Fonts:
-$main: 'Barlow', Roboto, 'Helvetica Neue', Arial, Calibri, sans-serif !important !default;
-$semi-condensed: 'Barlow Semi Condensed', 'Roboto Condensed', 'Avenir Condensed', 'sans-serif' !important !default;
-$condensed: 'Barlow Condensed', 'Roboto', monospace !important !default;
-$accent: 'Raleway', 'Poppins', handwriting !important !default;
-$redhat: 'Red Hat Display', sans-serif !important !default;
+$main:                              'Barlow', Roboto, 'Helvetica Neue', Arial, Calibri, sans-serif !important !default;
+$semi-condensed:                    'Barlow Semi Condensed', 'Roboto Condensed', 'Avenir Condensed', 'sans-serif' !important !default;
+$condensed:                         'Barlow Condensed', 'Roboto', monospace !important !default;
+$accent:                            'Raleway', 'Poppins', handwriting !important !default;
+$redhat:                            'Red Hat Display', sans-serif !important !default;
 
 // Colors:
-$light: #e7e8eb !default;
-$dark-blue: #30313b !default;
-$blue: #384156 !default;
-$salmon: #ff596b !default;
-$green: #758e47 !default;
-$yellow: #febc2e !default;
+$light:                             #e7e8eb !default;
+$dark-blue:                         #30313b !default;
+$blue:                              #384156 !default;
+$salmon:                            #ff596b !default;
+$green:                             #758e47 !default;
+$yellow:                            #febc2e !default;
 
 /* SCSS HEX */
-$oxford-blue: #11233bff !default;
-$black-coral: #495867ff !default;
-$blue-yonder: #577399ff !default;
-$star-command-blue: #0479b5ff !default;
-$beau-blue: #bdd5eaff !default;
-$ghost-white: #f7f7ffff !default;
-$amaranth-purple: #b81253ff !default;
-$olive-drab-3: #848f25ff !default;
-$yellow-orange-color-wheel: #f79100ff !default;
+$oxford-blue:                       #11233bff !default;
+$black-coral:                       #495867ff !default;
+$blue-yonder:                       #577399ff !default;
+$star-command-blue:                 #0479b5ff !default;
+$beau-blue:                         #bdd5eaff !default;
+$ghost-white:                       #f7f7ffff !default;
+$amaranth-purple:                   #b81253ff !default;
+$olive-drab-3:                      #848f25ff !default;
+$yellow-orange-color-wheel:         #f79100ff !default;
 
 
 /* SCSS Gradient */
-$gradient-top: linear-gradient(0deg,
+$gradient-top:                      linear-gradient(0deg,
   $oxford-blue,
   $black-coral,
   $blue-yonder,
@@ -37,95 +37,112 @@ $gradient-top: linear-gradient(0deg,
   $amaranth-purple,
   $olive-drab-3,
   $yellow-orange-color-wheel
-);
-$gradient-right: linear-gradient(90deg,
-  $oxford-blue,
-  $black-coral,
-  $blue-yonder,
-  $star-command-blue,
-  $beau-blue,
-  $ghost-white,
-  $amaranth-purple,
-  $olive-drab-3,
-  $yellow-orange-color-wheel
-);
-$gradient-bottom: linear-gradient(180deg,
-  $oxford-blue,
-  $black-coral,
-  $blue-yonder,
-  $star-command-blue,
-  $beau-blue,
-  $ghost-white,
-  $amaranth-purple,
-  $olive-drab-3,
-  $yellow-orange-color-wheel
-);
-$gradient-left: linear-gradient(270deg,
-  $oxford-blue,
-  $black-coral,
-  $blue-yonder,
-  $star-command-blue,
-  $beau-blue,
-  $ghost-white,
-  $amaranth-purple,
-  $olive-drab-3,
-  $yellow-orange-color-wheel
-);
-$gradient-top-right: linear-gradient(45deg,
-  $oxford-blue,
-  $black-coral,
-  $blue-yonder,
-  $star-command-blue,
-  $beau-blue,
-  $ghost-white,
-  $amaranth-purple,
-  $olive-drab-3,
-  $yellow-orange-color-wheel
-);
-$gradient-bottom-right: linear-gradient(135deg,
-  $oxford-blue,
-  $black-coral,
-  $blue-yonder,
-  $star-command-blue,
-  $beau-blue,
-  $ghost-white,
-  $amaranth-purple,
-  $olive-drab-3,
-  $yellow-orange-color-wheel
-);
-$gradient-top-left: linear-gradient(225deg,
-  $oxford-blue,
-  $black-coral,
-  $blue-yonder,
-  $star-command-blue,
-  $beau-blue,
-  $ghost-white,
-  $amaranth-purple,
-  $olive-drab-3,
-  $yellow-orange-color-wheel
-);
-$gradient-bottom-left: linear-gradient(315deg,
-  $oxford-blue,
-  $black-coral,
-  $blue-yonder,
-  $star-command-blue,
-  $beau-blue,
-  $ghost-white,
-  $amaranth-purple,
-  $olive-drab-3,
-  $yellow-orange-color-wheel
-);
-$gradient-radial: radial-gradient(
-    $oxford-blue,
-    $black-coral,
-    $blue-yonder,
-    $star-command-blue,
-    $beau-blue,
-    $ghost-white,
-    $amaranth-purple,
-    $olive-drab-3,
-    $yellow-orange-color-wheel
-);
+                                    );
+
+$gradient-right:                    linear-gradient(
+                                        90deg,
+                                        $oxford-blue,
+                                        $black-coral,
+                                        $blue-yonder,
+                                        $star-command-blue,
+                                        $beau-blue,
+                                        $ghost-white,
+                                        $amaranth-purple,
+                                        $olive-drab-3,
+                                        $yellow-orange-color-wheel
+                                    );
+
+
+$gradient-bottom:                   linear-gradient(
+                                        180deg,
+                                        $oxford-blue,
+                                        $black-coral,
+                                        $blue-yonder,
+                                        $star-command-blue,
+                                        $beau-blue,
+                                        $ghost-white,
+                                        $amaranth-purple,
+                                        $olive-drab-3,
+                                        $yellow-orange-color-wheel
+                                    );
+
+$gradient-left:                     linear-gradient(
+                                        270deg,
+                                        $oxford-blue,
+                                        $black-coral,
+                                        $blue-yonder,
+                                        $star-command-blue,
+                                        $beau-blue,
+                                        $ghost-white,
+                                        $amaranth-purple,
+                                        $olive-drab-3,
+                                        $yellow-orange-color-wheel
+                                    );
+
+
+$gradient-top-right:                linear-gradient(
+                                        45deg,
+                                        $oxford-blue,
+                                        $black-coral,
+                                        $blue-yonder,
+                                        $star-command-blue,
+                                        $beau-blue,
+                                        $ghost-white,
+                                        $amaranth-purple,
+                                        $olive-drab-3,
+                                        $yellow-orange-color-wheel
+                                    );
+
+$gradient-bottom-right:             linear-gradient(
+                                        135deg,
+                                        $oxford-blue,
+                                        $black-coral,
+                                        $blue-yonder,
+                                        $star-command-blue,
+                                        $beau-blue,
+                                        $ghost-white,
+                                        $amaranth-purple,
+                                        $olive-drab-3,
+                                        $yellow-orange-color-wheel
+                                    );
+
+$gradient-top-left:                 linear-gradient(
+                                        225deg,
+                                        $oxford-blue,
+                                        $black-coral,
+                                        $blue-yonder,
+                                        $star-command-blue,
+                                        $beau-blue,
+                                        $ghost-white,
+                                        $amaranth-purple,
+                                        $olive-drab-3,
+                                        $yellow-orange-color-wheel
+                                    );
+
+$gradient-bottom-left:              linear-gradient(
+                                        315deg,
+                                        $oxford-blue,
+                                        $black-coral,
+                                        $blue-yonder,
+                                        $star-command-blue,
+                                        $beau-blue,
+                                        $ghost-white,
+                                        $amaranth-purple,
+                                        $olive-drab-3,
+                                        $yellow-orange-color-wheel
+                                    );
+
+$gradient-radial:                   radial-gradient(
+                                        $oxford-blue,
+                                        $black-coral,
+                                        $blue-yonder,
+                                        $star-command-blue,
+                                        $beau-blue,
+                                        $ghost-white,
+                                        $amaranth-purple,
+                                        $olive-drab-3,
+                                        $yellow-orange-color-wheel
+                                    );
 
 // Navbar:
 $nav-link-padding-y:                .5rem;
