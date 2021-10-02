@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "colinstodd-com": {
+      "hosting": {
+        "kontaxMe": [
+          "colinstodd-com"
+        ]
+      }
+    }
+  }
+}

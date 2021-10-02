@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "*": {
+      ".read": false,
+      ".write": false
+    },
+    "contacts": {
+      ".read": false,
+      ".write": true
+    }
+  }
+}

@@ -1,18 +1,22 @@
 @import 'variables';
 @import 'mixins';
 
-h1, h2, h3, h4 {
+h1, h2 {
     font-family: $redhat;
     font-weight: 900;
 }
 
-h5, h6 {
+h3, h4, h5, h6 {
     font-family: $accent;
     font-weight: 500;
+    padding: $xs-pad;
+    
 }
 
 p, div, td, th, li, ul, ol {
     font-family: $main;
-    font-weight: 500;
-
+    font-weight: 400;
+    padding: $s-pad;
+    line-height: $l-height;
 }
+
