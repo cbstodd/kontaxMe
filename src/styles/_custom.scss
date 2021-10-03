@@ -1,9 +1,17 @@
 @import 'variables';
 @import 'mixins';
 
-h1, h2 {
+html, body,   {
+    background-color: $ghost-white;
+}
+
+h1, h2, a.brand, a.navbar-brand {
     font-family: $redhat;
     font-weight: 900;
+    ~a.brand {
+        color: $dark-blue;
+        text-decoration: none;
+    }
 }
 
 h3, h4, h5, h6 {

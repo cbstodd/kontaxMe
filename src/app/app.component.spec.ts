@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { SideNavbarComponent } from './core/components/side-navbar/side-navbar.component';
 
 describe('AppComponent', () => {
     beforeEach(async () => {
@@ -9,7 +10,8 @@ describe('AppComponent', () => {
                 RouterTestingModule
             ],
             declarations: [
-                AppComponent
+                AppComponent,
+                SideNavbarComponent,
             ],
         }).compileComponents();
     });
@@ -32,7 +34,7 @@ describe('AppComponent', () => {
         const compiled = fixture.nativeElement as HTMLElement;
         expect(
           compiled.querySelector(
-            'h1'
+            '.navbar-brand'
           )?.textContent
         )
           .toContain('kontax');

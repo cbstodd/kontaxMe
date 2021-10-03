@@ -7,6 +7,7 @@ import { ContactItemComponent } from './components/contact-item/contact-item.com
 import { ContactListComponent } from './components/contact-list/contact-list.component';
 import { ContactDetailsComponent } from './components/contact-details/contact-details.component';
 import { ContactService } from './services/contact.service';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { ContactService } from './services/contact.service';
     ],
     imports: [
         CommonModule,
+        RouterModule,
         ContactRoutingModule,
     ],
     providers: [
