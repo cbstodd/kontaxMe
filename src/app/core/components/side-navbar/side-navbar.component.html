@@ -1,8 +1,10 @@
 <!-- SIDE-NAVBAR -->
 <nav class="navbar navbar-light bg-info text-light">
     <div class="container-fluid">
-        <a class="navbar-brand" [routerLink]="['/']">kontax</a>
-        <a class="brand" [routerLink]="['/contacts']">Contacts</a>
+        <a class="navbar-brand" [routerLink]="['/contacts']">
+            <img [src]="smLogo" class="sm-logo img-fluid" alt="kontax logo">
+        </a>
+        <a class="brand" [routerLink]="['/']">kontax</a>
         <button class="navbar-toggler"
                 type="button"
                 data-bs-toggle="offcanvas"
@@ -23,10 +25,12 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active"
+                           aria-current="page"
+                           href="#">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" [routerLink]="['/contacts']">Contacts</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
@@ -34,18 +38,19 @@
                             Dropdown
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Log Out</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item"
+                                   href="#">Sign Out</a></li>
                         </ul>
                     </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-info" type="submit">Search</button>
                 </form>
             </div>
         </div>

@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-navbar.component.scss']
 })
 export class SideNavbarComponent implements OnInit {
+  smLogo: string = './assets/images/logos/kontax_blue_green_logo100px.png';
 
   constructor() { }
 
