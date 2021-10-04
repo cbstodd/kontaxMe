@@ -1,30 +1,37 @@
 @import 'variables';
 @import 'mixins';
 
-html, body,   {
-    background-color: $ghost-white;
+html, body {
+  @include gradiant-bg($ghost-white, $light);
 }
 
 h1, h2, a.brand, a.navbar-brand {
-    font-family: $redhat;
-    font-weight: 900;
-    ~a.brand {
-        color: $dark-blue;
-        text-decoration: none;
-    }
+  font-family: $redhat;
+  font-weight: 900;
+  
+  ~ a.brand {
+    color:           $dark-blue;
+    text-decoration: none;
+  }
 }
 
 h3, h4, h5, h6 {
-    font-family: $accent;
-    font-weight: 500;
-    padding: $xs-pad;
-    
+  font-family: $accent;
+  font-weight: 500;
+  padding:     $xs-pad;
 }
 
 p, div, td, th, li, ul, ol {
-    font-family: $main;
-    font-weight: 400;
-    padding: $s-pad;
-    line-height: $l-height;
+  font-family: $main;
+  font-weight: 400;
+  padding:     $s-pad;
+  line-height: $l-height;
 }
 
+a {
+  color: $carolina-blue;
+}
+
+.carolina-blue-button {
+  @include carolina-blue-btn;
+}

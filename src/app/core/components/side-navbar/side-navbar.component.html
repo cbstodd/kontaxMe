@@ -1,10 +1,10 @@
 <!-- SIDE-NAVBAR -->
-<nav class="navbar navbar-light bg-info text-light">
+<nav class="navbar navbar-light bg-light text-dark">
     <div class="container-fluid">
         <a class="navbar-brand" [routerLink]="['/contacts']">
-            <img [src]="smLogo" class="sm-logo img-fluid" alt="kontax logo">
+            <img [src]="iconLogo100" class="sm-logo img-fluid" alt="kontax logo">
         </a>
-        <a class="brand" [routerLink]="['/']">kontax</a>
+        <a class="brand" [routerLink]="['/']">kontax.me</a>
         <button class="navbar-toggler"
                 type="button"
                 data-bs-toggle="offcanvas"
@@ -15,9 +15,13 @@
         <div class="offcanvas offcanvas-end"
              tabindex="-1"
              id="offcanvasNavbar"
-             aria-labelledby="offcanvasNavbarLabel">
+             [ngClass]="bgColor">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">kontax</h5>
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    <a class="navbar-brand" [routerLink]="['/contacts']">
+                        <img [src]="iconLogo100" class="img-fluid" alt="kontax logo">
+                    </a>
+                </h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close">
                 </button>
@@ -50,7 +54,7 @@
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-info" type="submit">Search</button>
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
                 </form>
             </div>
         </div>

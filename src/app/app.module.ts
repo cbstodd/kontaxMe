@@ -8,11 +8,15 @@ import { environment } from '../environments/environment';
 import { AngularFireAnalyticsModule } from '@angular/fire/compat/analytics';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { CoreModule } from './core/core.module';
+import { SideNavbarComponent } from './core/components/side-navbar/side-navbar.component';
+import { FooterComponent } from './core/components/footer/footer.component';
 
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        SideNavbarComponent,
+        FooterComponent
     ],
     imports: [
         BrowserModule,

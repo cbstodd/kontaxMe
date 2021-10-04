@@ -1,6 +1,6 @@
 @import 'bootstrap';
 // Fonts:
-$main:                             'Heebo', 'Barlow', Roboto, 'Helvetica Neue', Arial, Calibri, sans-serif !important !default;
+$main:                              'Heebo', 'Barlow', Roboto, 'Helvetica Neue', Arial, Calibri, sans-serif !important !default;
 $semi-condensed:                    'Barlow Semi Condensed', 'Roboto Condensed', 'Avenir Condensed', 'sans-serif' !important !default;
 $condensed:                         'Barlow Condensed', 'Roboto', monospace !important !default;
 $accent:                            'Quicksand', 'Poppins', handwriting !important !default;
@@ -16,9 +16,11 @@ $yellow:                            #febc2e !default;
 
 /* SCSS HEX */
 $oxford-blue:                       #11233bff !default;
+$persian-blue:                      #0a345aff !default;
 $black-coral:                       #495867ff !default;
 $blue-yonder:                       #577399ff !default;
 $star-command-blue:                 #0479b5ff !default;
+$carolina-blue:                     #4fa3fbff !default;
 $beau-blue:                         #bdd5eaff !default;
 $ghost-white:                       #f7f7ffff !default;
 $amaranth-purple:                   #b81253ff !default;
@@ -169,14 +171,14 @@ $nav-pills-link-active-bg:          $component-active-bg;
 
 
 /* Line-Height */
-$xs-height: 1rem;
-$s-height: 1.2rem;
-$m-height: 1.5rem;
-$l-height: 1.8rem;
-$xl-height: 2rem;
+$xs-height:                         1rem;
+$s-height:                          1.2rem;
+$m-height:                          1.5rem;
+$l-height:                          1.8rem;
+$xl-height:                         2rem;
 /* Padding  */
-$xs-pad: 0.75rem;
-$s-pad: 1rem;
-$m-pad: 1.5rem;
-$l-pad: 2rem;
-$xl-pad: 2.5rem;
+$xs-pad:                            0.75rem;
+$s-pad:                             1rem;
+$m-pad:                             1.5rem;
+$l-pad:                             2rem;
+$xl-pad:                            2.5rem;

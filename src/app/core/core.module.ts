@@ -8,16 +8,14 @@ import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
-    SideNavbarComponent,
-    FooterComponent
+
   ],
   imports: [
     CommonModule,
     RouterModule,
   ],
   exports: [
-    SideNavbarComponent,
-    FooterComponent
+
   ]
 })
 export class CoreModule { }

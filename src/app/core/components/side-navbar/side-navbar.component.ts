@@ -1,16 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-side-navbar',
-  templateUrl: './side-navbar.component.html',
-  styleUrls: ['./side-navbar.component.scss']
+    selector: 'app-side-navbar',
+    templateUrl: './side-navbar.component.html',
+    styleUrls: ['./side-navbar.component.scss']
 })
 export class SideNavbarComponent implements OnInit {
-  smLogo: string = './assets/images/logos/kontax_blue_green_logo100px.png';
+    iconLogo100: string = './assets/images/logos/kontax_wicon_carolina_n_persian_100px.png';
+    iconLogo260: string = './assets/images/logos/kontax_wicon_carolina_n_persian_260px.png';
+    bgColor = '.main-outlet';
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+    constructor() {
+
+    }
+
+    ngOnInit(): void {
+
+    }
 
 }
