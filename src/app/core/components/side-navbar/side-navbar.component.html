@@ -4,7 +4,9 @@
         <a class="navbar-brand" [routerLink]="['/contacts']">
             <img [src]="iconLogo100" class="sm-logo img-fluid" alt="kontax logo">
         </a>
-        <a class="brand" [routerLink]="['/']">kontax.me</a>
+        <a class="brand" [routerLink]="['/']">
+            <img [src]="kontaxWireFont" alt="kontax.me alt logo">
+        </a>
         <button class="navbar-toggler"
                 type="button"
                 data-bs-toggle="offcanvas"
@@ -27,6 +29,10 @@
                 </button>
             </div>
             <div class="offcanvas-body">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
                         <a class="nav-link active"
@@ -52,10 +58,6 @@
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-dark" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </div>

@@ -14,13 +14,15 @@ const appRoutes: Routes = [
           })
 
     },
+    { path: '**', pathMatch: 'full', redirectTo: 'contacts' }
 
 ];
 
 @NgModule({
     imports: [
         RouterModule.forRoot(appRoutes),
-        CoreModule
+        CoreModule,
+        ContactModule
     ],
     exports: [
         RouterModule,

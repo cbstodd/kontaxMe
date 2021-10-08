@@ -6,12 +6,12 @@ import { ContactDetailsComponent } from './components/contact-details/contact-de
 
 const contactRoutes: Routes = [
     {
-        path: '', component: ContactComponent, children: [
+        path: 'contacts', component: ContactComponent, children: [
             { path: '', component: ContactListComponent },
-            { path: '/:id', component: ContactDetailsComponent }
+            { path: ':id', component: ContactDetailsComponent }
         ]
     },
-    { path: '**', pathMatch: 'full', redirectTo: '/contacts' }
+    { path: '**', pathMatch: 'full', redirectTo: 'contacts' }
 ];
 
 @NgModule({

@@ -1,12 +1,12 @@
 @import 'variables';
 
-.smooth-fonts {
+@mixin smooth-fonts {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing:    antialiased;
   font-smoothing:         antialiased;
 }
 
-@mixin ghost-bg($color: ghost-light) {
+@mixin ghost-bg {
   background-color: $ghost-white;
 }
 
@@ -23,7 +23,7 @@
   border:                  1px solid $glass-color;
 }
 
-@mixin carolina-blue-btn($carolina-blue) {
+@mixin carolina-blue-btn($carolina-blue: #4fa3fbff) {
   color:        $carolina-blue;
   border-color: $carolina-blue;
   &.btn {

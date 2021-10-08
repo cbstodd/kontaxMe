@@ -1,4 +1,3 @@
-@import 'variables';
 @import 'mixins';
 
 html, body {
@@ -32,6 +31,6 @@ a {
   color: $carolina-blue;
 }
 
-.carolina-blue-button {
+.car-blue-btn {
   @include carolina-blue-btn;
 }

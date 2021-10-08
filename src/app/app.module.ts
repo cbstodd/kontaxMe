@@ -10,6 +10,7 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { CoreModule } from './core/core.module';
 import { SideNavbarComponent } from './core/components/side-navbar/side-navbar.component';
 import { FooterComponent } from './core/components/footer/footer.component';
+import { AngularFireDatabase, AngularFireDatabaseModule } from '@angular/fire/compat/database';
 
 
 @NgModule({
@@ -21,9 +22,12 @@ import { FooterComponent } from './core/components/footer/footer.component';
     imports: [
         BrowserModule,
         AppRoutingModule,
-        AngularFireModule.initializeApp(environment.firebase),
+        AngularFireModule.initializeApp(
+          environment.firebase,
+          environment.firebase.projectId
+        ),
         AngularFireAnalyticsModule,
-        AngularFirestoreModule,
+        AngularFireDatabaseModule,
     ],
     providers: [],
     bootstrap: [AppComponent]
