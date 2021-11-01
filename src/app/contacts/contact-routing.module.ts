@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './components/contact.component';
 import { ContactListComponent } from './components/contact-list/contact-list.component';
 import { ContactDetailsComponent } from './components/contact-details/contact-details.component';
+import { ContactService } from './services/contact.service';
 
 const contactRoutes: Routes = [
     {
@@ -21,5 +22,6 @@ const contactRoutes: Routes = [
     exports: [
         RouterModule
     ],
+
 })
 export class ContactRoutingModule {}

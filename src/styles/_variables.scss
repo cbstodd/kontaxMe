@@ -1,7 +1,7 @@
 @import 'bootstrap';
-// Fonts:
+// fonts:
 $main:                              'Heebo', 'Barlow', Roboto, 'Helvetica Neue', Arial, Calibri, sans-serif !important !default;
-$semi-condensed:                    'Barlow Semi Condensed', 'Roboto Condensed', 'Avenir Condensed', 'sans-serif' !important !default;
+$semi-condensed:                    'Barlow Semi Condensed', 'Roboto Condensed', 'Avenir Conddddensed', 'sans-serif' !important !default;
 $condensed:                         'Barlow Condensed', 'Roboto', monospace !important !default;
 $accent:                            'Quicksand', 'Poppins', handwriting !important !default;
 $redhat:                            'Red Hat Display', sans-serif !important !default;
@@ -26,7 +26,6 @@ $ghost-white:                       #f7f7ffff !default;
 $amaranth-purple:                   #b81253ff !default;
 $olive-drab-3:                      #848f25ff !default;
 $yellow-orange-color-wheel:         #f79100ff !default;
-
 
 /* SCSS Gradient */
 $gradient-top:                      linear-gradient(
@@ -156,7 +155,6 @@ $nav-link-color:                    $link-color;
 $nav-link-hover-color:              $link-hover-color;
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 $nav-link-disabled-color:           $gray-600;
-
 $nav-tabs-border-color:             $gray-300;
 $nav-tabs-border-width:             $border-width;
 $nav-tabs-border-radius:            $border-radius;
@@ -164,11 +162,9 @@ $nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color;
 $nav-tabs-link-active-color:        $gray-700;
 $nav-tabs-link-active-bg:           $body-bg;
 $nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg;
-
 $nav-pills-border-radius:           $border-radius;
 $nav-pills-link-active-color:       $component-active-color;
 $nav-pills-link-active-bg:          $component-active-bg;
-
 
 /* Line-Height */
 $xs-height:                         1rem;
