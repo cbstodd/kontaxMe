@@ -11,5 +11,11 @@
   "compileOnSave": true,
   "include": [
     "src"
+  ],
+  "exclude": [
+    "node_modules",
+    ".idea",
+    "build",
+    "dist"
   ]
 }
