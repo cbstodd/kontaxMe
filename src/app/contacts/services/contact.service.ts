@@ -1,29 +1,47 @@
 import { Injectable } from '@angular/core';
-import { AngularFireDatabase, AngularFireList, AngularFireObject, QueryFn } from '@angular/fire/compat/database';
+import {
+    AngularFireDatabase,
+    AngularFireAction,
+    AngularFireList,
+    AngularFireObject,
+    QueryFn
+} from '@angular/fire/compat/database';
 import { Contact } from '../Contact';
-import { AngularFireDatabase, AngularFireAction } from '@angular/fire/compat/database';
-import { Observable, ObservableInput, Observer, Subject } from 'rxjs';
-import { map, switchMapTo } from 'rxjs/operators';
+import { BehaviorSubject, Observable, ObservableInput, Observer, Subject } from 'rxjs';
+import { map, switchMap, switchMapTo } from 'rxjs/operators';
+import firebase from 'firebase/compat';
 
 @Injectable({
     providedIn: 'root'
 })
 export class ContactService {
-    public contactList$: Observable<AngularFireAction<firebase.database.DataSnapshot>[]>;
-    public queryByName$: Subject<Contact['name']>;
+    public contacts$: Observable<AngularFireAction<firebase.database.DataSnapshot>[]>;
+    public allContacts$: Observable<Contact[]>;
+    public category$: BehaviorSubject<string>;
 
+    constructor(public db: AngularFireDatabase) {
 
-    constructor(private db: AngularFireDatabase) {
-        this.contacts$ = db.list<Contact>('contacts').valueChanges();
-        this.queryByName$ = new Subject<Contact['name']>();
     }
 
+    getAllContacts(): Observable<Contact[]> {
+        this.allContacts$ = this.db.list<Contact>('contacts').valueChanges();
+        return this.allContacts$;
+    }
 
-    getAllContacts() {
-        this.contacts$.subscribe((contactsList): Contact[] => {
-            console.table(contactsList);
-            return this.contacts = contactsList;
-        });
+    getContactsByCategory(): Observable<AngularFireAction<firebase.database.DataSnapshot>[]> {
+        this.category$ = new BehaviorSubject('');
+        this.contacts$ = this.category$.pipe(
+          switchMap(category =>
+            this.db.list<Contact>('/contacts', ref =>
+              category ? ref.orderByChild('category').equalTo(category) : ref
+            ).snapshotChanges()
+          )
+        );
+        return this.contacts$;
+    }
+
+    filterBy(category: string) {
+        this.category$.next(category);
     }
 
 

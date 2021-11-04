@@ -1,6 +1,7 @@
 export class Contact {
     constructor(
       public archive: boolean,
+      public categories: string[],
       public createdAt: number,
       public email: string,
       public isNotABot: boolean,

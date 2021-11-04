@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { AngularFireDatabase, AngularFireList } from '@angular/fire/compat/database';
+import { AngularFireAction, AngularFireDatabase, AngularFireList } from '@angular/fire/compat/database';
 import { Contact } from '../../Contact';
 import { ContactService } from '../../services/contact.service';
+import firebase from 'firebase/compat';
 
 @Component({
     selector: 'app-contact-list',
@@ -10,7 +11,8 @@ import { ContactService } from '../../services/contact.service';
     styleUrls: ['./contact-list.component.scss']
 })
 export class ContactListComponent implements OnInit {
-    contacts$: Observable<Contact[]> | void;
+    contactsByCategory$: Observable<AngularFireAction<firebase.database.DataSnapshot>[]>;
+    allContacts$: Observable<Contact[]>;
     contacts: Contact[];
 
     constructor(public contactService: ContactService) {
@@ -18,7 +20,8 @@ export class ContactListComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.contacts$ = this.contactService.getAllContacts();
+        this.allContacts$ = this.contactService.getAllContacts();
+        this.contactsByCategory$ = this.contactService.getContactsByCategory();
     }
 
 }
