@@ -1,25 +1,46 @@
+![kontax.me](src/assets/images/logos/kontax_wicon_carolina_n_persian_700px.png)
 
-![Logo](https://firebasestorage.googleapis.com/v0/b/colinstodd-com.appspot.com/o/images%2F2021%2Fcover.png?alt=media&token=1d49237d-35a1-4eb3-9465-fb43c2de9594)
 
-
-# [kontax.me](https://kontax.me)
+## [kontax.me](https://kontax.me)
 
 [kontax](https://kontax.me) is a CMS for your your Realtime Firebase database. It's intended purpose was to have a place to organize my contacts from my static website (built with Jekyll) "contact" form. The form uses a Firebase function that creates contact documents.
 
 
 ## 👨🏼‍💻 Tech Stack
 
-**Client:** Angular 12, Bootstrap 5
+**Client:** Angular 13, Bootstrap 5
 
 **Server:** Firebase (Realtime Database and Hosting)
 
+Potentially adding support for [Supabase](https://supabase.io).
+
+
+==========================================
 
 ## Authors
+
 
 - [@cbstodd](https://www.github.com/cbstodd)
 
 
-## ⭕ About Me ⭕
-I'm a full stack developer that leans more towards the front-end of the spectrum...
+==========================================
 
-View my personal site at [colinstodd.com](https://colinstodd.com).
+### Need help building something similar?
+
+For consulting and contracting please visit:
+
+Founder and developer of [NILLIM](https://nillim.com) | [Colin Stodd](https://colinstodd.com).
+
+<div style="display:inline;">
+<a href="https://nillim.com" target="_blank" title="Visit nillim.com">
+<img src="https://nillim.com/wp-content/uploads/2022/02/teal_white_tall_270px.png"
+style="max-width:70px; padding:0 0.4rem;"/>
+</a>
+
+<a href="https://nillim.com" target="_blank" title="Visit Colin Stodd's personal website">
+<img src="https://firebasestorage.googleapis.com/v0/b/colinstodd-com.appspot.com/o/images%2F2021%2Fcs_dark_inset_260.png?alt=media&token=f32ecb06-6761-49a6-817c-a6ae1073c3fe"
+style="max-width:70px; padding:0 0.4rem;"/>
+</a>
+</div>
+
+
